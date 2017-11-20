@@ -118,76 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="toolStripStatusLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 25</value>
-  </data>
-  <data name="toolStripStatusLabel1.Text" xml:space="preserve">
-    <value>Состояние:</value>
-  </data>
-  <data name="systemStateLbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 25</value>
-  </data>
-  <data name="systemStateLbl.Text" xml:space="preserve">
-    <value>ОТКЛЮЧЕНО</value>
-  </data>
-  <data name="changePntBtn.Text" xml:space="preserve">
-    <value>Изменить точку</value>
-  </data>
-  <data name="lonGroup.Text" xml:space="preserve">
-    <value>Долгота</value>
-  </data>
-  <data name="latGroup.Text" xml:space="preserve">
-    <value>Широта</value>
-  </data>
-  <data name="syncWaypointsBtn.Text" xml:space="preserve">
-    <value>Сохранить в устройстве</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 20</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Путевые точки</value>
-  </data>
-  <data name="isFlipScreenChb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 24</value>
-  </data>
-  <data name="isFlipScreenChb.Text" xml:space="preserve">
-    <value>Для правой руки</value>
-  </data>
-  <data name="salinitySearchLnk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>255, 0</value>
-  </data>
-  <data name="salinitySearchLnk.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 33</value>
-  </data>
-  <data name="salinitySearchLnk.Text" xml:space="preserve">
-    <value>Искать в базе</value>
-  </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 33</value>
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>Соленость, PPM</value>
-  </data>
-  <data name="salinityEdit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 3</value>
-  </data>
-  <data name="applySettingsBtn.Text" xml:space="preserve">
-    <value>Сохранить</value>
-  </data>
-  <data name="trackGroup.Text" xml:space="preserve">
-    <value>Трек</value>
-  </data>
-  <data name="trackCountLbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 20</value>
-  </data>
-  <data name="trackCountLbl.Text" xml:space="preserve">
-    <value>Трек пуст</value>
-  </data>
-  <data name="downloadTrackBtn.Text" xml:space="preserve">
-    <value>Выгрузить</value>
-  </data>
-  <data name="settingsGroup.Text" xml:space="preserve">
-    <value>Настройки</value>
+  <data name="applySettingsBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 66</value>
   </data>
 </root>

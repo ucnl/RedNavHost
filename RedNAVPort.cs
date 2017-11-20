@@ -56,11 +56,11 @@ namespace RedNAVHost
             StringBuilder sb = new StringBuilder();
 
             if (PType == 0)
-                sb.Append("Буй ");
+                sb.Append("RedBASE ");
             else if (PType == 1)
-                sb.Append("Отметка ");
+                sb.Append("Marked point ");
             else if (PType == 2)
-                sb.Append("Путевая точка ");
+                sb.Append("Waypoint ");
 
             if (Latitude < 0)
                 sb.Append('S');

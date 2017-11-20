@@ -34,7 +34,6 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.systemStateLbl = new System.Windows.Forms.ToolStripStatusLabel();
             this.progressBar = new System.Windows.Forms.ToolStripProgressBar();
-            this.wpPanel = new System.Windows.Forms.Panel();
             this.changePntBtn = new System.Windows.Forms.Button();
             this.lonGroup = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -59,12 +58,11 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.deleteAllPoints = new System.Windows.Forms.ToolStripMenuItem();
             this.weblinkLbl = new System.Windows.Forms.LinkLabel();
-            this.deviceVersionLabel = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.deviceVersionLblTitle = new System.Windows.Forms.Label();
+            this.serialNumberLblTitle = new System.Windows.Forms.Label();
             this.serialNumberLbl = new System.Windows.Forms.Label();
             this.serialNumberContexMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.copyToClipboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.settingsGroup = new System.Windows.Forms.GroupBox();
             this.isFlipScreenChb = new System.Windows.Forms.CheckBox();
             this.salinitySearchLnk = new System.Windows.Forms.LinkLabel();
             this.label10 = new System.Windows.Forms.Label();
@@ -73,13 +71,20 @@
             this.trackGroup = new System.Windows.Forms.GroupBox();
             this.trackCountLbl = new System.Windows.Forms.Label();
             this.downloadTrackBtn = new System.Windows.Forms.Button();
-            this.redNodeInfoLbl = new System.Windows.Forms.Label();
+            this.redNodeInfoLblTitle = new System.Windows.Forms.Label();
             this.redNodeSerialLbl = new System.Windows.Forms.Label();
             this.rnSerialNumberContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.label12 = new System.Windows.Forms.Label();
+            this.redNodeSerialNumberLblTitle = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.deviceInfoGroup = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.redNodeInfoLbl = new System.Windows.Forms.Label();
+            this.deviceVersionLbl = new System.Windows.Forms.Label();
+            this.settingsGroup = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.routeGroup = new System.Windows.Forms.GroupBox();
             this.statusStrip.SuspendLayout();
-            this.wpPanel.SuspendLayout();
             this.lonGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lonSecEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lonMinEdit)).BeginInit();
@@ -90,19 +95,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.latDegEdit)).BeginInit();
             this.waypointsContexMenu.SuspendLayout();
             this.serialNumberContexMenu.SuspendLayout();
-            this.settingsGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salinityEdit)).BeginInit();
             this.trackGroup.SuspendLayout();
             this.rnSerialNumberContextMenu.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.deviceInfoGroup.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.settingsGroup.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.routeGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip
             // 
-            resources.ApplyResources(this.statusStrip, "statusStrip");
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.systemStateLbl,
             this.progressBar});
+            resources.ApplyResources(this.statusStrip, "statusStrip");
             this.statusStrip.Name = "statusStrip";
             // 
             // toolStripStatusLabel1
@@ -117,22 +127,10 @@
             // 
             // progressBar
             // 
-            resources.ApplyResources(this.progressBar, "progressBar");
             this.progressBar.Name = "progressBar";
+            resources.ApplyResources(this.progressBar, "progressBar");
             this.progressBar.Step = 1;
             this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-            // 
-            // wpPanel
-            // 
-            resources.ApplyResources(this.wpPanel, "wpPanel");
-            this.wpPanel.Controls.Add(this.changePntBtn);
-            this.wpPanel.Controls.Add(this.lonGroup);
-            this.wpPanel.Controls.Add(this.latGroup);
-            this.wpPanel.Controls.Add(this.syncWaypointsBtn);
-            this.wpPanel.Controls.Add(this.label1);
-            this.wpPanel.Controls.Add(this.waypointsLbx);
-            this.wpPanel.Controls.Add(this.weblinkLbl);
-            this.wpPanel.Name = "wpPanel";
             // 
             // changePntBtn
             // 
@@ -160,14 +158,14 @@
             // 
             // lonSecEdit
             // 
-            resources.ApplyResources(this.lonSecEdit, "lonSecEdit");
             this.lonSecEdit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lonSecEdit.DecimalPlaces = 3;
+            resources.ApplyResources(this.lonSecEdit, "lonSecEdit");
             this.lonSecEdit.Maximum = new decimal(new int[] {
-            59,
-            0,
-            0,
-            0});
+            2013265919,
+            -720531959,
+            -1096570888,
+            1769472});
             this.lonSecEdit.Name = "lonSecEdit";
             // 
             // label7
@@ -177,8 +175,8 @@
             // 
             // lonMinEdit
             // 
-            resources.ApplyResources(this.lonMinEdit, "lonMinEdit");
             this.lonMinEdit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.lonMinEdit, "lonMinEdit");
             this.lonMinEdit.Maximum = new decimal(new int[] {
             59,
             0,
@@ -193,8 +191,8 @@
             // 
             // lonDegEdit
             // 
-            resources.ApplyResources(this.lonDegEdit, "lonDegEdit");
             this.lonDegEdit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.lonDegEdit, "lonDegEdit");
             this.lonDegEdit.Maximum = new decimal(new int[] {
             179,
             0,
@@ -231,14 +229,14 @@
             // 
             // latSecEdit
             // 
-            resources.ApplyResources(this.latSecEdit, "latSecEdit");
             this.latSecEdit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.latSecEdit.DecimalPlaces = 3;
+            resources.ApplyResources(this.latSecEdit, "latSecEdit");
             this.latSecEdit.Maximum = new decimal(new int[] {
-            59,
-            0,
-            0,
-            0});
+            2013265919,
+            -720531959,
+            -1096570888,
+            1769472});
             this.latSecEdit.Name = "latSecEdit";
             // 
             // label4
@@ -248,8 +246,8 @@
             // 
             // latMinEdit
             // 
-            resources.ApplyResources(this.latMinEdit, "latMinEdit");
             this.latMinEdit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.latMinEdit, "latMinEdit");
             this.latMinEdit.Maximum = new decimal(new int[] {
             59,
             0,
@@ -264,8 +262,8 @@
             // 
             // latDegEdit
             // 
-            resources.ApplyResources(this.latDegEdit, "latDegEdit");
             this.latDegEdit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.latDegEdit, "latDegEdit");
             this.latDegEdit.Maximum = new decimal(new int[] {
             89,
             0,
@@ -297,44 +295,44 @@
             // 
             // waypointsLbx
             // 
-            resources.ApplyResources(this.waypointsLbx, "waypointsLbx");
             this.waypointsLbx.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.waypointsLbx.ContextMenuStrip = this.waypointsContexMenu;
+            resources.ApplyResources(this.waypointsLbx, "waypointsLbx");
             this.waypointsLbx.FormattingEnabled = true;
             this.waypointsLbx.Name = "waypointsLbx";
             this.waypointsLbx.SelectedIndexChanged += new System.EventHandler(this.waypointsLbx_SelectedIndexChanged);
             // 
             // waypointsContexMenu
             // 
-            resources.ApplyResources(this.waypointsContexMenu, "waypointsContexMenu");
             this.waypointsContexMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addWaypoint,
             this.deleteWaypoint,
             this.toolStripSeparator1,
             this.deleteAllPoints});
             this.waypointsContexMenu.Name = "waypointsContexMenu";
+            resources.ApplyResources(this.waypointsContexMenu, "waypointsContexMenu");
             // 
             // addWaypoint
             // 
-            resources.ApplyResources(this.addWaypoint, "addWaypoint");
             this.addWaypoint.Name = "addWaypoint";
+            resources.ApplyResources(this.addWaypoint, "addWaypoint");
             this.addWaypoint.Click += new System.EventHandler(this.addWaypoint_Click);
             // 
             // deleteWaypoint
             // 
-            resources.ApplyResources(this.deleteWaypoint, "deleteWaypoint");
             this.deleteWaypoint.Name = "deleteWaypoint";
+            resources.ApplyResources(this.deleteWaypoint, "deleteWaypoint");
             this.deleteWaypoint.Click += new System.EventHandler(this.deleteWaypoint_Click);
             // 
             // toolStripSeparator1
             // 
-            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             this.toolStripSeparator1.Name = "toolStripSeparator1";
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
             // deleteAllPoints
             // 
-            resources.ApplyResources(this.deleteAllPoints, "deleteAllPoints");
             this.deleteAllPoints.Name = "deleteAllPoints";
+            resources.ApplyResources(this.deleteAllPoints, "deleteAllPoints");
             this.deleteAllPoints.Click += new System.EventHandler(this.deleteAllPoints_Click);
             // 
             // weblinkLbl
@@ -344,15 +342,15 @@
             this.weblinkLbl.TabStop = true;
             this.weblinkLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.weblinkLbl_LinkClicked);
             // 
-            // deviceVersionLabel
+            // deviceVersionLblTitle
             // 
-            resources.ApplyResources(this.deviceVersionLabel, "deviceVersionLabel");
-            this.deviceVersionLabel.Name = "deviceVersionLabel";
+            resources.ApplyResources(this.deviceVersionLblTitle, "deviceVersionLblTitle");
+            this.deviceVersionLblTitle.Name = "deviceVersionLblTitle";
             // 
-            // label9
+            // serialNumberLblTitle
             // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
+            resources.ApplyResources(this.serialNumberLblTitle, "serialNumberLblTitle");
+            this.serialNumberLblTitle.Name = "serialNumberLblTitle";
             // 
             // serialNumberLbl
             // 
@@ -362,27 +360,17 @@
             // 
             // serialNumberContexMenu
             // 
-            resources.ApplyResources(this.serialNumberContexMenu, "serialNumberContexMenu");
             this.serialNumberContexMenu.AllowMerge = false;
             this.serialNumberContexMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.copyToClipboardToolStripMenuItem});
             this.serialNumberContexMenu.Name = "serialNumberContexMenu";
+            resources.ApplyResources(this.serialNumberContexMenu, "serialNumberContexMenu");
             // 
             // copyToClipboardToolStripMenuItem
             // 
-            resources.ApplyResources(this.copyToClipboardToolStripMenuItem, "copyToClipboardToolStripMenuItem");
             this.copyToClipboardToolStripMenuItem.Name = "copyToClipboardToolStripMenuItem";
+            resources.ApplyResources(this.copyToClipboardToolStripMenuItem, "copyToClipboardToolStripMenuItem");
             this.copyToClipboardToolStripMenuItem.Click += new System.EventHandler(this.copyToClipboardToolStripMenuItem_Click);
-            // 
-            // settingsGroup
-            // 
-            resources.ApplyResources(this.settingsGroup, "settingsGroup");
-            this.settingsGroup.Controls.Add(this.isFlipScreenChb);
-            this.settingsGroup.Controls.Add(this.salinitySearchLnk);
-            this.settingsGroup.Controls.Add(this.label10);
-            this.settingsGroup.Controls.Add(this.salinityEdit);
-            this.settingsGroup.Name = "settingsGroup";
-            this.settingsGroup.TabStop = false;
             // 
             // isFlipScreenChb
             // 
@@ -404,9 +392,9 @@
             // 
             // salinityEdit
             // 
-            resources.ApplyResources(this.salinityEdit, "salinityEdit");
             this.salinityEdit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.salinityEdit.DecimalPlaces = 1;
+            resources.ApplyResources(this.salinityEdit, "salinityEdit");
             this.salinityEdit.Maximum = new decimal(new int[] {
             40,
             0,
@@ -423,9 +411,9 @@
             // 
             // trackGroup
             // 
-            resources.ApplyResources(this.trackGroup, "trackGroup");
             this.trackGroup.Controls.Add(this.trackCountLbl);
             this.trackGroup.Controls.Add(this.downloadTrackBtn);
+            resources.ApplyResources(this.trackGroup, "trackGroup");
             this.trackGroup.Name = "trackGroup";
             this.trackGroup.TabStop = false;
             // 
@@ -441,10 +429,10 @@
             this.downloadTrackBtn.UseVisualStyleBackColor = true;
             this.downloadTrackBtn.Click += new System.EventHandler(this.downloadTrackBtn_Click);
             // 
-            // redNodeInfoLbl
+            // redNodeInfoLblTitle
             // 
-            resources.ApplyResources(this.redNodeInfoLbl, "redNodeInfoLbl");
-            this.redNodeInfoLbl.Name = "redNodeInfoLbl";
+            resources.ApplyResources(this.redNodeInfoLblTitle, "redNodeInfoLblTitle");
+            this.redNodeInfoLblTitle.Name = "redNodeInfoLblTitle";
             // 
             // redNodeSerialLbl
             // 
@@ -454,51 +442,111 @@
             // 
             // rnSerialNumberContextMenu
             // 
-            resources.ApplyResources(this.rnSerialNumberContextMenu, "rnSerialNumberContextMenu");
             this.rnSerialNumberContextMenu.AllowMerge = false;
             this.rnSerialNumberContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1});
             this.rnSerialNumberContextMenu.Name = "serialNumberContexMenu";
+            resources.ApplyResources(this.rnSerialNumberContextMenu, "rnSerialNumberContextMenu");
             // 
             // toolStripMenuItem1
             // 
-            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
-            // label12
+            // redNodeSerialNumberLblTitle
             // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
+            resources.ApplyResources(this.redNodeSerialNumberLblTitle, "redNodeSerialNumberLblTitle");
+            this.redNodeSerialNumberLblTitle.Name = "redNodeSerialNumberLblTitle";
+            // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.deviceInfoGroup, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.settingsGroup, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.trackGroup, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.routeGroup, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.weblinkLbl, 0, 5);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // deviceInfoGroup
+            // 
+            this.deviceInfoGroup.Controls.Add(this.tableLayoutPanel2);
+            resources.ApplyResources(this.deviceInfoGroup, "deviceInfoGroup");
+            this.deviceInfoGroup.Name = "deviceInfoGroup";
+            this.deviceInfoGroup.TabStop = false;
+            // 
+            // tableLayoutPanel2
+            // 
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.redNodeInfoLbl, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.deviceVersionLbl, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.deviceVersionLblTitle, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.serialNumberLblTitle, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.serialNumberLbl, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.redNodeInfoLblTitle, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.redNodeSerialLbl, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.redNodeSerialNumberLblTitle, 0, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
+            // redNodeInfoLbl
+            // 
+            resources.ApplyResources(this.redNodeInfoLbl, "redNodeInfoLbl");
+            this.redNodeInfoLbl.ContextMenuStrip = this.serialNumberContexMenu;
+            this.redNodeInfoLbl.Name = "redNodeInfoLbl";
+            // 
+            // deviceVersionLbl
+            // 
+            resources.ApplyResources(this.deviceVersionLbl, "deviceVersionLbl");
+            this.deviceVersionLbl.ContextMenuStrip = this.serialNumberContexMenu;
+            this.deviceVersionLbl.Name = "deviceVersionLbl";
+            // 
+            // settingsGroup
+            // 
+            this.settingsGroup.Controls.Add(this.tableLayoutPanel3);
+            resources.ApplyResources(this.settingsGroup, "settingsGroup");
+            this.settingsGroup.Name = "settingsGroup";
+            this.settingsGroup.TabStop = false;
+            // 
+            // tableLayoutPanel3
+            // 
+            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
+            this.tableLayoutPanel3.Controls.Add(this.isFlipScreenChb, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.salinitySearchLnk, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label10, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.salinityEdit, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.applySettingsBtn, 4, 2);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            // 
+            // routeGroup
+            // 
+            this.routeGroup.Controls.Add(this.syncWaypointsBtn);
+            this.routeGroup.Controls.Add(this.changePntBtn);
+            this.routeGroup.Controls.Add(this.label1);
+            this.routeGroup.Controls.Add(this.lonGroup);
+            this.routeGroup.Controls.Add(this.waypointsLbx);
+            this.routeGroup.Controls.Add(this.latGroup);
+            resources.ApplyResources(this.routeGroup, "routeGroup");
+            this.routeGroup.Name = "routeGroup";
+            this.routeGroup.TabStop = false;
             // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.redNodeSerialLbl);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.redNodeInfoLbl);
-            this.Controls.Add(this.trackGroup);
-            this.Controls.Add(this.applySettingsBtn);
-            this.Controls.Add(this.settingsGroup);
-            this.Controls.Add(this.serialNumberLbl);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.deviceVersionLabel);
-            this.Controls.Add(this.wpPanel);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.statusStrip);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.ShowIcon = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
-            this.wpPanel.ResumeLayout(false);
-            this.wpPanel.PerformLayout();
             this.lonGroup.ResumeLayout(false);
             this.lonGroup.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lonSecEdit)).EndInit();
@@ -511,12 +559,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.latDegEdit)).EndInit();
             this.waypointsContexMenu.ResumeLayout(false);
             this.serialNumberContexMenu.ResumeLayout(false);
-            this.settingsGroup.ResumeLayout(false);
-            this.settingsGroup.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salinityEdit)).EndInit();
             this.trackGroup.ResumeLayout(false);
             this.trackGroup.PerformLayout();
             this.rnSerialNumberContextMenu.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.deviceInfoGroup.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.settingsGroup.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
+            this.routeGroup.ResumeLayout(false);
+            this.routeGroup.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -528,7 +584,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel systemStateLbl;
         private System.Windows.Forms.ToolStripProgressBar progressBar;
-        private System.Windows.Forms.Panel wpPanel;
         private System.Windows.Forms.GroupBox lonGroup;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown lonSecEdit;
@@ -547,10 +602,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox waypointsLbx;
         private System.Windows.Forms.LinkLabel weblinkLbl;
-        private System.Windows.Forms.Label deviceVersionLabel;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label deviceVersionLblTitle;
+        private System.Windows.Forms.Label serialNumberLblTitle;
         private System.Windows.Forms.Label serialNumberLbl;
-        private System.Windows.Forms.GroupBox settingsGroup;
         private System.Windows.Forms.CheckBox isFlipScreenChb;
         private System.Windows.Forms.LinkLabel salinitySearchLnk;
         private System.Windows.Forms.Label label10;
@@ -567,11 +621,19 @@
         private System.Windows.Forms.ToolStripMenuItem deleteAllPoints;
         private System.Windows.Forms.ContextMenuStrip serialNumberContexMenu;
         private System.Windows.Forms.ToolStripMenuItem copyToClipboardToolStripMenuItem;
-        private System.Windows.Forms.Label redNodeInfoLbl;
+        private System.Windows.Forms.Label redNodeInfoLblTitle;
         private System.Windows.Forms.Label redNodeSerialLbl;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label redNodeSerialNumberLblTitle;
         private System.Windows.Forms.ContextMenuStrip rnSerialNumberContextMenu;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.GroupBox deviceInfoGroup;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label deviceVersionLbl;
+        private System.Windows.Forms.Label redNodeInfoLbl;
+        private System.Windows.Forms.GroupBox settingsGroup;
+        private System.Windows.Forms.GroupBox routeGroup;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
     }
 }
 
