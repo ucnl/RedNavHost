@@ -5,7 +5,7 @@ using System.IO;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
-//using UCNLGpx;
+using UCNLGpx;
 using UCNLKML;
 using UCNLUI.Dialogs;
 using System.Resources;
@@ -324,7 +324,7 @@ namespace RedNAVHost
             }
         }
 
-        /*
+        
         private void SaveTrackGPX(string fileName)
         {
             bool isSaved = false;
@@ -384,7 +384,7 @@ namespace RedNAVHost
                 }
             }
         }
-        */
+        
 
         private void SaveTrackCSV(string fileName)
         {
@@ -469,16 +469,16 @@ namespace RedNAVHost
             using (SaveFileDialog sDialog = new SaveFileDialog())
             {
                 sDialog.DefaultExt = "kml";
-                sDialog.Filter = "Google KML (*.kml)|*.kml|CSV (*.csv)|*.csv";
+                sDialog.Filter = "Google KML (*.kml)|*.kml|GPS eXchange (*.gpx)|*.gpx|CSV (*.csv)|*.csv";
                 sDialog.FileName = GetTimeDateFileName();
 
                 if (sDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
                     if (sDialog.FilterIndex == 1)
                         SaveTrackXML(sDialog.FileName);
-                    //else if (sDialog.FilterIndex == 2)
-                        //SaveTrackGPX(sDialog.FileName);                        
                     else if (sDialog.FilterIndex == 2)
+                        SaveTrackGPX(sDialog.FileName);                        
+                    else if (sDialog.FilterIndex == 3)
                         SaveTrackCSV(sDialog.FileName);
                 }
             }

@@ -84,15 +84,24 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="UCNLKML">
-      <HintPath>..\..\UCNLKML\UCNLKML\bin\Release\UCNLKML.dll</HintPath>
+    <Reference Include="UCNLGpx, Version=1.0.6282.19024, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\UCNLLibs\UCNLGpx\UCNLGpx\bin\Release\UCNLGpx.dll</HintPath>
+    </Reference>
+    <Reference Include="UCNLKML, Version=1.0.6282.18980, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\UCNLLibs\UCNLKML\UCNLKML\bin\Release\UCNLKML.dll</HintPath>
     </Reference>
     <Reference Include="UCNLNMEA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\UCNLNMEA\UCNLNMEA\bin\Release\UCNLNMEA.dll</HintPath>
+      <HintPath>..\..\..\UCNLLibs\UCNLNMEA\UCNLNMEA\bin\Release\UCNLNMEA.dll</HintPath>
     </Reference>
-    <Reference Include="UCNLUI">
-      <HintPath>..\..\UCNLUI\UCNLUI\bin\Release\UCNLUI.dll</HintPath>
+    <Reference Include="UCNLSalinity">
+      <HintPath>..\..\..\UCNLLibs\UCNLSalinity\UCNLSalinity\bin\Release\UCNLSalinity.dll</HintPath>
+    </Reference>
+    <Reference Include="UCNLUI, Version=1.0.6282.19007, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\UCNLLibs\UCNLUI\UCNLUI\bin\Release\UCNLUI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
